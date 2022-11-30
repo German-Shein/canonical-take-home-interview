@@ -28,3 +28,9 @@ $color-brand: #ffffff;
 {
 	padding-left: 1rem;
 }
+
+.l-card
+{
+	display: flex;
+	flex-direction: column;
+}
