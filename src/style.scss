@@ -6,3 +6,25 @@
 $color-brand: #ffffff;
 
 // Add theme if applicable
+
+.central-placement
+{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.rounded-corners
+{
+	border-radius: 0.25rem;
+}
+
+.top-bar
+{
+	border-top: 0.25rem solid #a87ca0;
+}
+
+.category-padding
+{
+	padding-left: 1rem;
+}
