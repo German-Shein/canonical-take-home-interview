@@ -7,16 +7,9 @@ $color-brand: #ffffff;
 
 // Add theme if applicable
 
-.central-placement
-{
-	display: flex;
-	align-items: center;
-	height: 100vh;
-}
-
 .rounded-corners
 {
-	border-radius: 0.25rem;
+	border-radius: 0.125rem;
 }
 
 .top-bar
@@ -40,14 +33,6 @@ $color-brand: #ffffff;
 	border-top: 1px dotted #cdcdcd;
 }
 
-.card-footer
-{
-	margin-bottom: 0;
-	font-size: 0.875rem;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-}
-
 .card-header
 {
 	padding-left: 0.5rem;
@@ -56,6 +41,21 @@ $color-brand: #ffffff;
 	padding-bottom: 0.5rem;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-weight: 300;
+}
+
+.card-link
+{
+	font-weight: 300;
+}
+
+.card-footer
+{
+	margin-bottom: 0;
+	font-size: 0.875rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .decreased_content_padding

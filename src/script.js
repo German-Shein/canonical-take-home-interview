@@ -18,7 +18,7 @@ const posts = fetch ('https://people.canonical.com/~anthonydillon/wp-json/wp/v2/
 		postElement.innerHTML = `<h5 class="card-header">${post.topic.length > 0 ? post._embedded ["wp:term"].flat ().filter (term => term.taxonomy === 'topic').find (term => term.id === post.topic [0]).name.toUpperCase () : 'CLOUD AND SERVER'}</h5>
 		<div class="p-card__inner dotted-horizontal-line decreased_content_padding">
 			<img class="p-card__image rounded-corners" src="${post.featured_media}">
-			<h4><strong><a href="${post.link}" rel="noreferrer noopener" target="_blank">${post.title.rendered}</a></strong></h4>
+			<h3 class="card-link"><a href="${post.link}" rel="noreferrer noopener" target="_blank">${post.title.rendered}</a></h3>
 			<p><em>By <a href="${post._embedded.author.find (author => author.id === post.author).link}" rel="noreferrer noopener" target="_blank">${post._embedded.author.find (author => author.id === post.author).name}</a> on ${publicationDate.getDate ()} ${publicationDate.toLocaleString ('default', { month: 'long' })} ${publicationDate.getFullYear ()}</em></p>
 		</div>
 		<div class="l-footer--sticky dotted-horizontal-line">
