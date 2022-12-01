@@ -4,3 +4,5 @@ To install and launch the project, run the following commands:
 2. `npm install`
 3. `yarn build-css`
 4. `npm run dev`
+
+Access the project through http://localhost:3000/
